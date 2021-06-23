@@ -3,30 +3,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: [
-        "Josefin Sans",
-        "Roboto",
-        "system-ui",
-        "BlinkMacSystemFont",
-        "-apple-system",
-        "Segoe UI",
-        "Oxygen",
-        "Ubuntu",
-        "Cantarell",
-        "Fira Sans",
-        "Droid Sans",
-        "Helvetica Neue",
-        "sans-serif",
-      ],
+      body: ['"Lineto Circular Pro"', '"Helvetica"', '"Arial"', 'sans-serif'],
+      sans: ['"Lineto Circular Pro"', '"Helvetica"', '"Arial"', 'sans-serif'],
     },
-    extend: {},
-  },
-  variants: {
-    backgroundColor: ["responsive", "hover", "focus", "focus-within", "active"],
-    borderStyle: ["responsive", "hover"],
-    flexbox: ["responsive", "group-hover"],
-    overflow: ["responsive", "hover", "group-hover"],
-    visibility: ["responsive", "group-hover"],
+    extend: {
+      backgroundImage: theme => ({
+        'one': "url('./../images/background1.png')",
+      })
+    }
   },
   plugins: [
     require("@tailwindcss/typography"),

@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://baasie.com`,
-    title: `Baasie.com`,
-    titleTemplate: "%s - In accordance to nature",
-    description: `A site about everything I do in tech`,
+    title: `Baasie.com - Software architecture in accordance with nature`,
+    titleTemplate: "%s - Software architecture in accordance with nature",
+    description: `Sociotechnical and Domain-Driven Design architect. Facilitator of visual and collaborative modelling using Deep Democracy `,
     url: "https://baasie.com",
+    image: "/background1.png",
     twitterUsername: "@kenny_baas",
     defaultKeywords:
         "Domain-Driven Design, Domain Driven Design, Behaviour-Driven Development, Software Architecture, Socio-technical, Sociotechnical, Socio-technical architecture, Sociotechnical architecture, Microservices, cqrs/es, evenstorming, event storming, strategic design, organisational design",
@@ -77,6 +78,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-postcss`,
+    {
+      resolve: "gatsby-background-image",
+      options: {
+        // add your own characters to escape, replacing the default ':/'
+        specialChars: "/:",
+      },
+    },
     `gatsby-plugin-typescript`,
     {
       resolve: "gatsby-plugin-eslint",

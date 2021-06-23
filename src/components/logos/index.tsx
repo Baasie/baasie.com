@@ -1,0 +1,5 @@
+export { GithubLogo } from "./github"
+export { NetlifyLogo } from "./netlify"
+export { LinkedinLogo } from "./Linkedin"
+export { TwitterLogo } from "./twitter"
+export { VdddLogo } from "./vddd"

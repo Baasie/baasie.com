@@ -33,7 +33,6 @@ export const AvatarKenny = ({size} : AvatarKennyProps) => {
     return (
         <GatsbyImage
             image={avatarKennyLarge.childImageSharp.gatsbyImageData}
-            tw="object-contain mr-2 h-8 rounded-md"
             alt="AvatarKenny"
         />
     )
@@ -42,7 +41,6 @@ export const AvatarKenny = ({size} : AvatarKennyProps) => {
   return (
     <GatsbyImage
       image={avatarKennySmall.childImageSharp.gatsbyImageData}
-      tw="object-contain mr-2 h-8 rounded-md"
       alt="AvatarKenny"
     />
   )

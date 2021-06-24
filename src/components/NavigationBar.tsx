@@ -42,7 +42,10 @@ const NavbarMobile = () => {
     const [isMenuOpen, setMenuOpen] = useState(false)
     return (
         <div tw="lg:hidden">
-            <div tw="w-full flex flex-row items-center justify-between shadow-md justify-end">
+            <div tw="w-full flex flex-row items-center justify-between">
+                <DesktopNavigationItem to="/">
+                    Baasie.com
+                </DesktopNavigationItem>
                 <button
                     tw="relative flex flex-shrink-0 items-center m-4 px-3 py-2 border rounded border-white hover:text-red-800 hover:border-red-800"
                     onClick={() => setMenuOpen((isMenuOpen) => !isMenuOpen)}
@@ -64,7 +67,7 @@ const NavbarMobile = () => {
             >
                 <div tw="flex flex-col lg:flex-row items-start lg:items-stretch justify-end opacity-100">
                     <MobileNavigationItem
-                        to="/sessions"> About me
+                        to="/about-me"> About me
                     </MobileNavigationItem>
                     <MobileNavigationItem href="https://dddheuristics.com">
                         <VdddLogo />
@@ -118,25 +121,30 @@ const DesktopNavigationItem = ({children, to, href}: DesktopNavigationItemProps)
 
 const NavbarDesktop = () => {
     return (
-        <div tw="hidden lg:flex lg:justify-end lg:h-full lg:space-x-4 px-4">
-            <div tw="space-x-4 lg:flex lg:flex-row lg:items-stretch">
-                <DesktopNavigationItem to="/About me">
-                    About me
-                </DesktopNavigationItem>
-                <DesktopNavigationItem href="https://dddheuristics.com">
-                    <VdddLogo />
-                </DesktopNavigationItem>
-            </div>
-            <div tw="space-x-1 lg:flex lg:flex-row lg:items-stretch">
-                <DesktopNavigationItem href="https://twitter.com/kenny_baas">
-                    <TwitterLogo />
-                </DesktopNavigationItem>
-                <DesktopNavigationItem href="https://www.linkedin.com/in/kenny-baas/">
-                    <LinkedinLogo />
-                </DesktopNavigationItem>
-                <DesktopNavigationItem href="https://github.com/Baasie">
-                    <GithubLogo />
-                </DesktopNavigationItem>
+        <div tw="hidden lg:flex lg:h-full lg:px-4 lg:items-center lg:justify-between">
+            <DesktopNavigationItem to="/">
+                Baasie.com
+            </DesktopNavigationItem>
+            <div tw="lg:flex lg:justify-end lg:h-full lg:space-x-4">
+                <div tw="space-x-4 lg:flex lg:flex-row lg:items-stretch">
+                    <DesktopNavigationItem to="/about-me">
+                        About me
+                    </DesktopNavigationItem>
+                    <DesktopNavigationItem href="https://dddheuristics.com">
+                        <VdddLogo />
+                    </DesktopNavigationItem>
+                </div>
+                <div tw="space-x-1 lg:flex lg:flex-row lg:items-stretch">
+                    <DesktopNavigationItem href="https://twitter.com/kenny_baas">
+                        <TwitterLogo />
+                    </DesktopNavigationItem>
+                    <DesktopNavigationItem href="https://www.linkedin.com/in/kenny-baas/">
+                        <LinkedinLogo />
+                    </DesktopNavigationItem>
+                    <DesktopNavigationItem href="https://github.com/Baasie">
+                        <GithubLogo />
+                    </DesktopNavigationItem>
+                </div>
             </div>
         </div>
     )
@@ -144,7 +152,7 @@ const NavbarDesktop = () => {
 
 const NavBar = () => {
     return (
-        <div tw="bg-white opacity-80 shadow-md h-20 sticky top-0 inset-x-0 z-50">
+        <div tw="bg-white bg-opacity-80 shadow-md h-20 sticky top-0 inset-x-0 z-50">
             <NavbarMobile />
             <NavbarDesktop />
         </div>

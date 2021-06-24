@@ -5,7 +5,7 @@ module.exports = {
     titleTemplate: "%s - Software architecture in accordance with nature",
     description: `Sociotechnical and Domain-Driven Design architect. Facilitator of visual and collaborative modelling using Deep Democracy `,
     url: "https://baasie.com",
-    image: "/background1.png",
+    image: "/background.png",
     twitterUsername: "@kenny_baas",
     defaultKeywords:
         "Domain-Driven Design, Domain Driven Design, Behaviour-Driven Development, Software Architecture, Socio-technical, Sociotechnical, Socio-technical architecture, Sociotechnical architecture, Microservices, cqrs/es, evenstorming, event storming, strategic design, organisational design",

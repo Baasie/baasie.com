@@ -1,40 +1,45 @@
-import * as React from "react";
-import BackgroundImage from 'gatsby-background-image'
-import {graphql, useStaticQuery} from 'gatsby'
+import { getImage } from "gatsby-plugin-image"
+import { convertToBgImage } from "gbimage-bridge"
+import BackgroundImage from "gatsby-background-image"
+import { graphql, useStaticQuery } from "gatsby"
+import * as React from "react"
+import "twin.macro"
 
 import Layout from "../templates/layout"
+import Hero from "../home/Hero";
 import NavigationBar from "../components/NavigationBar"
 import SEO from "../components/Seo"
+import Talks from "../home/Talks";
 
-const Index = ( {className} : any) => {
-    const data = useStaticQuery(
-        graphql`
-            query {
-                desktop: file(relativePath: { eq: "background1.png" }) {
-                    childImageSharp {
-                        fluid(quality: 90, maxWidth: 1920) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
+const Index = () => {
+    const {backgroundImage} = useStaticQuery(graphql`
+        {
+            backgroundImage: file(relativePath: { eq: "background.png" }) {
+                childImageSharp {
+                    gatsbyImageData(
+                        height: 2399
+                        width: 3424
+                    )
                 }
             }
-        `
-    )
-    const imageData = data.desktop.childImageSharp.fluid
-  return (
-    <Layout>
-        <BackgroundImage
-            Tag="section"
-            className={className}
-            fluid={imageData}
-            backgroundColor={`#040e18`}
-        >
+        }
+    `)
+    const image = getImage(backgroundImage)
+    const bgImage = convertToBgImage(image)
+
+    return (
+        <Layout>
             <SEO/>
-            <NavigationBar/>
-            Hallo world
-        </BackgroundImage>
-    </Layout>
-  )
+            <BackgroundImage
+                tw="pb-8 h-auto bg-scroll"
+                {...bgImage}
+            >
+                <NavigationBar/>
+                <Hero/>
+                <Talks/>
+            </BackgroundImage>
+        </Layout>
+    )
 }
 
 export default Index

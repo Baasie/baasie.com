@@ -8,12 +8,13 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        'one': "url('./../images/background1.png')",
+        'one': "url('./../images/background.png')",
       })
     }
   },
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/line-clamp"),
+    require('tailwindcss-textshadow'),
   ],
 }

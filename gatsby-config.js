@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://baasie.com`,
-    title: `Baasie.com - Software architecture in accordance with nature`,
-    titleTemplate: "%s - Software architecture in accordance with nature",
+    title: `Kenny Baas-Schwegler`,
+    titleTemplate: "%s - Sociotechnical architecture in accordance with nature",
     description: `Sociotechnical and Domain-Driven Design architect. Facilitator of visual and collaborative modelling using Deep Democracy `,
     url: "https://baasie.com",
     image: "/background.png",
@@ -62,13 +62,13 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `content`,
-    //     path: `${__dirname}/src/content`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

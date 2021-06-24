@@ -14,7 +14,7 @@ const Button = ({
   href,
 }: ButtonProps) => {
   const style = [
-    tw`text-center m-4 text-white px-4 py-2 bg-red-800 hover:bg-red-700 rounded break-words`,
+    tw`text-center text-white px-4 py-2 bg-red-800 hover:bg-red-700 rounded break-words`,
   ]
   if (href) {
     return (

@@ -42,7 +42,7 @@ const NavbarMobile = () => {
     const [isMenuOpen, setMenuOpen] = useState(false)
     return (
         <div tw="lg:hidden">
-            <div tw="w-full flex flex-row items-center justify-between">
+            <div tw="w-full flex flex-row items-center justify-between px-2">
                 <DesktopNavigationItem to="/">
                     Baasie.com
                 </DesktopNavigationItem>
@@ -72,7 +72,7 @@ const NavbarMobile = () => {
                     <MobileNavigationItem href="https://dddheuristics.com">
                         <VdddLogo />
                     </MobileNavigationItem>
-                    <div tw="flex flex-row p-2 space-x-1">
+                    <div tw="flex flex-row p-2 px-4 space-x-1">
                         <DesktopNavigationItem href="https://twitter.com/kenny_baas">
                             <TwitterLogo />
                         </DesktopNavigationItem>

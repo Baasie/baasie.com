@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'one': "url('./../images/background.png')",
-      })
+      }),
+      colors: {
+        primary: "#e1c495"
+      },
     }
   },
   plugins: [

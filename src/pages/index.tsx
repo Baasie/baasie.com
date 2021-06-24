@@ -10,6 +10,7 @@ import Hero from "../home/Hero";
 import NavigationBar from "../components/NavigationBar"
 import SEO from "../components/Seo"
 import Talks from "../home/Talks";
+import Footer from "../components/footer";
 
 const Index = () => {
     const {backgroundImage} = useStaticQuery(graphql`
@@ -31,12 +32,13 @@ const Index = () => {
         <Layout>
             <SEO/>
             <BackgroundImage
-                tw="pb-8 h-auto bg-scroll"
+                tw="h-auto bg-scroll"
                 {...bgImage}
             >
                 <NavigationBar/>
                 <Hero/>
                 <Talks/>
+                <Footer/>
             </BackgroundImage>
         </Layout>
     )

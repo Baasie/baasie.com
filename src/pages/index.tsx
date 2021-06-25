@@ -11,6 +11,7 @@ import NavigationBar from "../components/NavigationBar"
 import SEO from "../components/Seo"
 import Talks from "../home/Talks";
 import Footer from "../components/footer";
+import AboutMe from "../home/AboutMe";
 
 const Index = () => {
     const {backgroundImage} = useStaticQuery(graphql`
@@ -37,6 +38,7 @@ const Index = () => {
             >
                 <NavigationBar/>
                 <Hero/>
+                <AboutMe/>
                 <Talks/>
                 <Footer/>
             </BackgroundImage>

@@ -12,6 +12,7 @@ import SEO from "../components/Seo"
 import Talks from "../home/Talks";
 import Footer from "../components/footer";
 import AboutMe from "../home/AboutMe";
+import DomainDrivenDesignInfo from "../home/DomainDrivenDesignInfo";
 
 const Index = () => {
     const {backgroundImage} = useStaticQuery(graphql`
@@ -40,6 +41,7 @@ const Index = () => {
                 <Hero/>
                 <AboutMe/>
                 <Talks/>
+                <DomainDrivenDesignInfo/>
                 <Footer/>
             </BackgroundImage>
         </Layout>

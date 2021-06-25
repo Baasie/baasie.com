@@ -28,9 +28,10 @@ const AboutMe = () => {
                 <GatsbyImage
                     image={aboutMe.childImageSharp.gatsbyImageData}
                     alt="About me at DDD"
-                    tw="md:w-2/5 rounded-tr-3xl rounded-lg md:rounded-bl-3xl"
+                    tw="md:w-2/5 rounded-tr-3xl md:rounded-bl-3xl"
                 />
                 <div tw="text-center text-gray-800 md:w-2/5 space-y-6 text-shadow">
+                    <h1 tw="text-base md:text-xl xl:text-3xl font-extrabold text-red-800">—About me—</h1>
                     <div tw="font-sans text-xs md:text-sm xl:text-base space-y-4 text-shadow-xl">
                         <div>
                             A lot of knowledge is lost when designing and building software — lost because of hand-overs in a telephone game, confusing communication by not having a shared language, discussing complexity without visualisation and by not leveraging the full potential and wisdom of the diversity of the people.

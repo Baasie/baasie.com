@@ -17,7 +17,7 @@ const Session = ( {session} : SessionProps) => {
                 alt={session.name}
                 tw="object-contain w-full"
             />
-            <div tw="text-white p-2 font-sans text-sm xl:text-base p-4">
+            <div tw="text-gray-800 p-2 font-sans text-sm xl:text-base p-4">
                 <div tw="line-clamp-6">
                     {session.description}
                 </div>
@@ -51,7 +51,7 @@ const Talks = () => {
              id="talks">
             <div tw="flex flex-col items-center justify-start">
                 <div tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 ">
-                    <h1 tw="text-base text-white md:text-xl xl:text-3xl font-bold">Talks and hands-on</h1>
+                    <h1 tw="text-base text-white md:text-xl xl:text-3xl font-bold">—Talks and hands-on—</h1>
                 </div>
                 <div tw="flex flex-col md:flex-row lg:w-4/5 items-center justify-between md:m-4 lg:m-8 space-y-4 md:space-y-0 md:space-x-6 lg:space-x-14">
                     <Session session={sessions[0]}/>

@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
 import "twin.macro"
 
-import Layout from "../templates/layout"
+import BaseTemplate from "../templates/BaseTemplate"
 import Hero from "../home/Hero";
 import NavigationBar from "../components/NavigationBar"
 import SEO from "../components/Seo"
@@ -31,7 +31,7 @@ const Index = () => {
     const bgImage = convertToBgImage(image)
 
     return (
-        <Layout>
+        <BaseTemplate>
             <SEO/>
             <BackgroundImage
                 tw="h-auto bg-scroll"
@@ -44,7 +44,7 @@ const Index = () => {
                 <DomainDrivenDesignInfo/>
                 <Footer/>
             </BackgroundImage>
-        </Layout>
+        </BaseTemplate>
     )
 }
 

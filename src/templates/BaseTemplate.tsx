@@ -1,7 +1,7 @@
 import * as React from "react";
 import "twin.macro"
 
-const Layout = ({ children } : any) => {
+const BaseTemplate = ({ children } : any) => {
 
     return (
         <>
@@ -12,4 +12,4 @@ const Layout = ({ children } : any) => {
     )
 }
 
-export default Layout
+export default BaseTemplate

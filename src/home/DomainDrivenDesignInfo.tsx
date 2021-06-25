@@ -52,7 +52,7 @@ const DomainDrivenDesignInfo = () => {
                 <GatsbyImage
                     image={domainDrivenDesignInfo.childImageSharp.gatsbyImageData}
                     alt="About me at DDD"
-                    tw="md:w-2/5 rounded-tr-3xl rounded-lg md:rounded-bl-3xl"
+                    tw="md:w-2/5 rounded-tl-3xl md:rounded-br-3xl"
                 />
             </div>
         </div>

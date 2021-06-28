@@ -5,7 +5,7 @@ const BaseTemplate = ({ children } : any) => {
 
     return (
         <>
-            <div id="top" tw="font-sans bg-one">
+            <div id="top" tw="font-sans">
                 {children}
             </div>
         </>

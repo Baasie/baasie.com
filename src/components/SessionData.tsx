@@ -14,10 +14,14 @@ export const SessionData = graphql`
             }
             renditions {
                 conference
-                speakerdeck
-                date
                 url
+                date
+                type
                 video
+                speakerdeck
+                miro
+                alternativeTitle
+                alternativeDescription
             }
             description
         }
@@ -35,9 +39,11 @@ export type Rendition = {
     conference: string
     url: string
     date: Date
-    video: string
-    speakerdeck: string
-    alternativeTitle: string
-    alternativeDescription: string
+    type: "talk" | "keynote" | "hands-on" | "workshop"
+    video?: string
+    speakerdeck?: string
+    miro?: string
+    alternativeTitle?: string
+    alternativeDescription?: string
 }
 

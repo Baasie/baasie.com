@@ -11,6 +11,8 @@ type SessionComponentContent = {
     name: string
     image: IGatsbyImageData
     description: string
+    conference: string
+    type: string
 }
 
 interface SessionProps {
@@ -26,9 +28,10 @@ const Session = ( {session} : SessionProps) => {
                 tw="h-full w-full object-cover"
             />
             <div tw="text-gray-800 p-2 font-sans text-sm xl:text-base p-4">
-                <h1 tw="prose-sm md:prose-md lg:prose-lg xl:prose-xl font-bold h-1/5">
-                    {session.name}
-                </h1>
+                    <div tw="prose-sm md:prose-md lg:prose-lg xl:prose-xl font-bold h-1/5">
+                        {session.name} @ {session.conference}
+                    </div>
+
                 <div tw="line-clamp-6 h-4/5">
                     {session.description}
                 </div>
@@ -60,9 +63,11 @@ const Talks = () => {
             session.renditions.forEach(rendition => {
                 let sessionComponentContent: SessionComponentContent = {
 
-                    name: rendition.alternativeTitle ? rendition.alternativeTitle : session.name,
+                    name: rendition.alternativeTitle || session.name,
                     image: session.img.childImageSharp.gatsbyImageData,
-                    description: rendition.alternativeDescription ? rendition.alternativeDescription : session.description
+                    description: rendition.alternativeDescription || session.description,
+                    conference: rendition.conference,
+                    type: rendition.type
                 };
                 sessionsMap.set(rendition.date, sessionComponentContent);
             })
@@ -72,7 +77,9 @@ const Talks = () => {
     let placeholderSession: SessionComponentContent  = {
         name: "",
         image: sessions[0].img.childImageSharp.gatsbyImageData,
-        description: ""
+        description: "",
+        conference: "",
+        type: ""
     }
     let allDates = Array.from(sessionsMap.keys())
     let upcomingDate = FindFirstUpcomingSession(allDates);

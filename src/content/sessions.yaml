@@ -17,10 +17,66 @@ sessions:
       - conference: "End2End live 2021"
         url: "https://end2end-live.com/workshops/autonomy-is-that-what-we-really-want/"
         date: "2021-06-18"
-        video:
+        type: "keynote"
         speakerdeck: "https://speakerdeck.com/baasie/autonomy-is-that-we-we-really-want-at-end-to-end-live"
-        alternativeTitle:
+  - name: "How cognitive biases and ranking can foster an ineffective architecture and design"
+    img: ../images/sessions/cognitive-ranking.png
+    description:
+      "The power of collaborative modelling comes from having a diverse group of people who, together, have a lot of wisdom and knowledge. You would expect that all this knowledge will be put to use, co-creating, and to design a model. In reality, we don’t actually listen to all the available input and perspectives due to cognitive biases and ranking. Because not everything that needs to be said has been said, we will end up with sub-optimal models and architecture. Even worse, people don’t feel part of the solution and don’t commit to it. Good architecture and design need all the insights and perception. If we are not aware, cognitive biases and ranking kills those insights and wisdom and kills the effectiveness of your models!
+
+       Join us in this talk where we will interactively explore how we can improve our facilitation skills and focus on neuro-inclusiveness with Lewis Deep Democracy (LDD). By having a Deep Democratic discussions together on what biases are at play during liberating structures workshops, and how ranking will effect a visual collaborative modelling session like EventStorming and User Story Mapping, you will gain first-hand experience about LDD. With this experience, we will explain how we embedded LDD in our design processes. We will let you leave with the knowledge on how to observe sabotage behaviour, battle oppression, and to create safety in exploring alternative perceptions. We will show you how you can really let the group say what needs to be said and take a collective autocratic decision in designing your software models.
+       "
+    renditions:
+      - conference: "Digital Architecture Design Day’21"
+        url: "https://www.digitalarchitecturedesignday.com/#!/programme"
+        date: "2021-10-04"
+        type: "hands-on"
+      - conference: "DevOps oNLine 2021"
+        url: "https://devopsdays.org/events/2021-amsterdam/program/kenny-baas"
+        date: "2021-06-29"
+        type: "keynote"
+        speakerdeck: "https://speakerdeck.com/baasie/how-cognitive-biases-and-ranking-can-foster-an-ineffective-devops-culture-at-devopsdays-online"
+        alternativeTitle: "How cognitive biases and ranking can foster an ineffective DevOps culture"
         alternativeDescription:
+          "
+          The effectiveness of working in a DevOps way and be able to progressively deliver software and gain insights comes from having a diverse group of people who, together, have a lot of wisdom and knowledge. You would expect that all this knowledge and all the feedback from progressively delivery software will be put to use co-creating and to design a model. In reality, we don’t actually listen to all the available input and perspectives due to cognitive biases and ranking. Because not everything that needs to be said has been said, we will end up with building sub-optimal software. Even worse, people don’t feel part of the solution and don’t commit to it. Good software needs all the insights and perception. If you are not aware, cognitive biases and ranking kills those insights and wisdom and kills the effectiveness of your DevOps culture!
+          Join us in this talk where we will explore how we can improve our facilitation skills and focus on neuro-inclusiveness. We will dive into techniques and methods from Liberating Structures and Deep Democracy the Lewis Method. We will demonstrate how you can combine these inclusive techniques with well known collaborative modelling tools like EventStorming, Example Mapping, Impact Mapping, and User Story Mapping. We will let you leave with the knowledge on how to observe sabotage behaviour, battle oppression, and to create safety in exploring alternative perceptions. We will show you how you can really let the group say what needs to be said and take a collective autocratic decision in creating software.
+          "
+      - conference: "Mucon 2021"
+        url: "https://skillsmatter.com/skillscasts/15026-how-cognitive-biases-and-ranking-can-foster-an-ineffective-architecture"
+        date: "2021-04-13"
+        type: "talk"
+        video: "https://www.youtube.com/embed/7ty0nwXNh-M"
+        speakerdeck: "https://speakerdeck.com/baasie/how-cognitive-biases-and-ranking-can-foster-an-ineffective-architecture-at-mucon-2021"
+      - conference: "Mini-SPA Conference 2021"
+        url: "https://www.bcs.org/events/2021/march/webinar-mini-spa-conference-2021/"
+        date: "2021-03-24"
+        type: "hands-on"
+        miro: "https://miro.com/app/board/o9J_lN2Dgh8=/"
+      - conference: "OOP 2021"
+        url: "https://www.oop-konferenz.de/oop2021/programm/konferenzprogramm.html"
+        date: "2021-02-09"
+        type: "hands-on"
+        miro: "https://miro.com/app/board/o9J_lVVHnYI=/"
+      - conference: "DDD Europe 2021"
+        url: "https://dddeurope.com/2021/program/2021/program/2607"
+        date: "2021-02-05"
+        type: "hands-on"
+        miro: "https://miro.com/app/board/o9J_lYuIHpw=/"
+  - name: "Enterprise Architecture & DDD: Partners in Design"
+    img: ../images/sessions/enterprise-and-ddd.png
+    description:
+      "
+       Did you ever experiment tension between different people inside of an organisation, with regards to design strategies? On one field, the Enterprise Architects and their business capabilities, and on the other side the Domain-Driven Design practitioners with their patterns? Endless hours of discussion about the design strategy, leading to waste and polarisation.
+       What if we could combine these two worlds? Are they so different?
+       Join us on this hands-on, where we will work a serious of exercises where you can leverage business capabilities modelling and strategic Domain-Driven Design patterns to model different functions inside of an organisation. You will learn on to move from the different methods while leveraging the strengths of each other. Leveraging those perspectives, you can start modelling based on intention, creating highly autonomous agents, whilst aligned with the organisation purpose and mission.
+       If your role is architect, line manager or you just want to gain experience in modelling at the enterprise level, then this is the right spot. We will model a use case, and walk through several scenarios where we apply the different modelling techniques. Previous knowledge of Strategic Domain-Driven Design and Enterprise Architecture is welcomed, but not required. You will leave the hands-on with a toolset that will allow you to apply to your product portfolio, creating sensible boundaries.
+       "
+    renditions:
+      - conference: "ISAQB Software Architecture Gathering 2021"
+        url: "https://conferences.isaqb.org/software-architecture-gathering/full-program/"
+        date: "2021-10-12"
+        type: "workshop"
   - name: "Does culture impact software design?"
     img: ../images/sessions/does-culture.jpg
     description:
@@ -34,36 +90,79 @@ sessions:
       - conference: "DDDeXchange 2021"
         url: "https://skillsmatter.com/skillscasts/15042-does-culture-impact-software-design"
         date: "2021-06-08"
-        video:
-        speakerdeck:
-        alternativeTitle:
-        alternativeDescription:
-  - name: "How cognitive biases and ranking can foster an ineffective architecture and design"
-    img: ../images/sessions/cognitive-ranking.png
+        type: "talk"
+  - name: "Managing polarities in Software design and engineering"
+    img: ../images/sessions/polarity-management.png
     description:
-      "The power of collaborative modelling comes from having a diverse group of people who, together, have a lot of wisdom and knowledge. You would expect that all this knowledge will be put to use, co-creating, and to design a model. In reality, we don’t actually listen to all the available input and perspectives due to cognitive biases and ranking. Because not everything that needs to be said has been said, we will end up with sub-optimal models and architecture. Even worse, people don’t feel part of the solution and don’t commit to it. Good architecture and design need all the insights and perception. If we are not aware, cognitive biases and ranking kills those insights and wisdom and kills the effectiveness of your models!
+      "
+      Do you find yourself, or your team facing unsolvable problems? Problems that start to polarise and get decided by the people with the most rank? Or the majority vote decided and it resolves in a split in the team or in people feeling left out, or excluded? Perhaps you find yourself excluded from a team or company? And the moment you think you solved it they come back again. The thing is, polarisations like these cannot be solved, like breathing in and breathing out but need to be managed. If we don't, we will make compromises or stay in one polarity and experience the downside of both. To identify and manage polarities, we need to discuss and start using polarity mapping.
 
-       Join us in this talk where we will interactively explore how we can improve our facilitation skills and focus on neuro-inclusiveness with Lewis Deep Democracy (LDD). By having a Deep Democratic discussions together on what biases are at play during liberating structures workshops, and how ranking will effect a visual collaborative modelling session like EventStorming and User Story Mapping, you will gain first-hand experience about LDD. With this experience, we will explain how we embedded LDD in our design processes. We will let you leave with the knowledge on how to observe sabotage behaviour, battle oppression, and to create safety in exploring alternative perceptions. We will show you how you can really let the group say what needs to be said and take a collective autocratic decision in designing your software models.
-       "
+      In this session, we will interactively expose you to polarity thinking. We will explore how to identify polarities and how we can start managing them with Barry Johnson Polarity Mapping. We will take a common polarity in software design, like too much vs too little upfront design, mob/pair programming vs programming in isolation, and planning vs taking action. By filling in the polarity map together, we show you the power of visualisation to manage the polarity. We will go from either-or thinking to both-and thinking, and this way includes the entire team in managing that polarity."
     renditions:
-      - conference: "DevOps oNLine 2021"
-        url: "https://devopsdays.org/events/2021-amsterdam/program/kenny-baas"
-        date: "2021-10-29"
-        video:
-        speakerdeck: "https://speakerdeck.com/baasie/how-cognitive-biases-and-ranking-can-foster-an-ineffective-devops-culture-at-devopsdays-online"
-        alternativeTitle: "How cognitive biases and ranking can foster an ineffective DevOps culture"
+      - conference: "OOP 2021"
+        url: "https://www.oop-konferenz.de/oop2021/programm/konferenzprogramm.html"
+        date: "2021-02-10"
+        type: "hands-on"
+        miro: "https://miro.com/app/board/o9J_lWkMcms=/"
+      - conference: "DDD Europe 2021"
+        url: "https://dddeurope.com/2021/program/2021/program/46"
+        date: "2021-02-05"
+        type: "hands-on"
+        miro: "https://miro.com/app/board/o9J_lWk8u8c=/"
+        alternativeTitle: "When to go from collaborative modelling to coding?"
         alternativeDescription:
           "
-          The effectiveness of working in a DevOps way and be able to progressively deliver software and gain insights comes from having a diverse group of people who, together, have a lot of wisdom and knowledge. You would expect that all this knowledge and all the feedback from progressively delivery software will be put to use co-creating and to design a model. In reality, we don’t actually listen to all the available input and perspectives due to cognitive biases and ranking. Because not everything that needs to be said has been said, we will end up with building sub-optimal software. Even worse, people don’t feel part of the solution and don’t commit to it. Good software needs all the insights and perception. If you are not aware, cognitive biases and ranking kills those insights and wisdom and kills the effectiveness of your DevOps culture!
-          Join us in this talk where we will explore how we can improve our facilitation skills and focus on neuro-inclusiveness. We will dive into techniques and methods from Liberating Structures and Deep Democracy the Lewis Method. We will demonstrate how you can combine these inclusive techniques with well known collaborative modelling tools like EventStorming, Example Mapping, Impact Mapping, and User Story Mapping. We will let you leave with the knowledge on how to observe sabotage behaviour, battle oppression, and to create safety in exploring alternative perceptions. We will show you how you can really let the group say what needs to be said and take a collective autocratic decision in creating software.
+          Managing polarities in software design and engineering.
+          When can we actually start coding? How do you know when you have done enough collaborative modelling? How can we make our architecture and design really iterative? Domain-driven design puts a huge focus on collaborative modelling to build a shared understanding of your domain and we use a lot of tools like EventStorming, Example Mapping, Whiteboard sessions and Responsibility mapping to get to that shared understanding. But when it comes to questions like “when do we start coding?’, and “How much collaborative modelling is needed?”, it is often difficult to find a good answer or the answer you receive is “it depends”.
+          The reason that it is so difficult to answer those questions is because we are looking at these questions in the wrong way. We look at them like a problem we need to solve, instead of what it actually is: a polarisation that needs to be managed. If we don’t learn how to recognize and manage polarities, we will make compromises or stay on one side of the polarity and experience the downside of both. To identify and manage polarities, we need to discuss and start using polarity mapping.
+          In this session, we will interactively introduce you to polarity thinking. We will explore how to identify polarities and how to manage them with Barry Johnson Polarity Mapping. We will explore too much vs too little upfront design, by filling in the polarity map together, we show you the power of visualisation to manage the polarity. We will go from either-or thinking to both-and thinking, and this way include the entire team in managing that polarity. You will leave the session knowing when to go from collaborative modelling to coding and fill in the polarity map with your team the next day!
           "
-      - conference: "Mucon 2021"
-        url: "https://skillsmatter.com/skillscasts/15026-how-cognitive-biases-and-ranking-can-foster-an-ineffective-architecture"
-        date: "2021-11-13"
-        video: "https://www.youtube.com/embed/7ty0nwXNh-M"
-        speakerdeck: "https://speakerdeck.com/baasie/how-cognitive-biases-and-ranking-can-foster-an-ineffective-architecture-at-mucon-2021"
-        alternativeTitle:
+      - conference: "NDC London 2021"
+        url: "https://dddeurope.com/2021/program/2021/program/46"
+        date: "2021-01-29"
+        type: "talk"
+        video: "https://www.youtube.com/watch?v=K6oXfgUFNsM"
+        alternativeTitle: "When to go from collaborative modelling to coding?"
         alternativeDescription:
+          "
+          Managing polarities in software design and engineering.
+          When can we actually start coding? How do you know when you have done enough collaborative modelling? How can we make our architecture and design really iterative? Domain-driven design puts a huge focus on collaborative modelling to build a shared understanding of your domain and we use a lot of tools like EventStorming, Example Mapping, Whiteboard sessions and Responsibility mapping to get to that shared understanding. But when it comes to questions like “when do we start coding?’, and “How much collaborative modelling is needed?”, it is often difficult to find a good answer or the answer you receive is “it depends”.
+          The reason that it is so difficult to answer those questions is because we are looking at these questions in the wrong way. We look at them like a problem we need to solve, instead of what it actually is: a polarisation that needs to be managed. If we don’t learn how to recognize and manage polarities, we will make compromises or stay on one side of the polarity and experience the downside of both. To identify and manage polarities, we need to discuss and start using polarity mapping.
+          In this session, we will interactively introduce you to polarity thinking. We will explore how to identify polarities and how to manage them with Barry Johnson Polarity Mapping. We will explore too much vs too little upfront design, by filling in the polarity map together, we show you the power of visualisation to manage the polarity. We will go from either-or thinking to both-and thinking, and this way include the entire team in managing that polarity. You will leave the session knowing when to go from collaborative modelling to coding and fill in the polarity map with your team the next day!
+          "
+  - name: "Distilling Design Heuristics by Modelling"
+    img: ../images/sessions/distilling-design-heuristics.png
+    description:
+      "
+       How can we get better as software designers?
+       By becoming more aware of our design heuristics and be intentional as we cultivate and refine them. Heuristics aid in the design and even determine our attitude and behaviour. For example, agile developers value frequent feedback and decomposing larger design problems into smaller, more manageable chunks that they design and test as they go. We each have our own (often implicit) heuristics that we have acquired through reading, practice, and experience. Let us share these heuristics during a modelling session!
+       You’ll be presented with a modelling problem that you will try to design in groups. During designing, we will rotate observers that will capture and map heuristics they see happening. After the heuristics are captured, groups will exchange and try-out other groups heuristics, to switch thinking during design. Finally, we will wrap-up with the whole group explaining and sharing the key heuristics used in each group.
+      "
+    renditions:
+      - conference: "OOP 2021"
+        url: "https://www.oop-konferenz.de/oop2021/programm/konferenzprogramm.html"
+        date: "2021-02-08"
+        type: "hands-on"
+        miro: "https://miro.com/app/board/o9J_lV1ZKko=/"
+      - conference: "DDD Europe 2021"
+        url: "https://dddeurope.com/2021/program/2021/program/2607"
+        date: "2021-02-04"
+        type: "hands-on"
+        miro: "https://miro.com/app/board/o9J_lbbk-pI=/"
+  - name: "Towards Autonomously Aligned DevOps Teams with Domain-Driven Design"
+    img: ../images/sessions/autonomy-teams-ddd.png
+    description:
+      "
+      The companies I consult with are going through an agile DevOps transformation. Typically they focus on transitioning people into teams towards DevOps working, getting groups with max eight people into a team, and being able to work almost autonomously. This transformation almost always poses questions like; How do we divide the current software into the teams, which teams take ownership of what part of the current system, how do we functionally align the teams to the business strategy, and who goes in what team? We call this socio-technical architecture.
+      To deal with those questions companies request my help to design (micro)services using a Domain-Driven Design approach because it makes it easier to divide the software between teams. I believe enterprises who are going to or doing an Agile DevOps transformation need at least a Domain-Driven Design approach to create autonomous teams that are aligned with the business architecture. Aligning autonomous teams to the business strategy creates a set of unique challenges. In this war story talk, I will share my experience with moving towards autonomous aligned DevOps teams with a Domain-Driven Design approach.
+      "
+    renditions:
+      - conference: "Progressive delivery conf 2021"
+        url: "https://www.youtube.com/watch?v=17XUdEONi1Y"
+        date: "2021-03-18"
+        type: "talk"
+        video: "https://www.youtube.com/watch?v=17XUdEONi1Y"
+        speakerdeck: "https://speakerdeck.com/baasie/towards-autonomous-aligned-teams-with-domain-driven-design-at-progressive-delivery-conf-2021"
   - name: "EventStorming; Continuous learning between multiple disciplines"
     img: ../images/sessions/aotb-2021.png
     description:
@@ -76,7 +175,35 @@ sessions:
       - conference: "Agile on the beach 2021"
         url: "https://events.agileonthebeach.com/event/15740756-f9c3-4fcc-8348-ba191b63bb53/websitePage:645d57e4-75eb-4769-b2c0-f201a0bfc6ce"
         date: "2021-09-02"
-        video:
-        speakerdeck:
-        alternativeTitle:
-        alternativeDescription:
+        type: "hands-on"
+  - name: "EventStorming for Domain-Driven Design modelling"
+    img: ../images/sessions/eventstorming-for-ddd.png
+    description:
+      "
+      Creating multiple models for the same problem is one of the more important lessons that Domain-Driven Design teaches us. It is a lot cheaper to quickly iterate over them and throw away less useful prototypes before we even start coding. However, the way agile software teams gain knowledge about what to build is either by the product owner or business analyst serving as a proxy to domain knowledge. Domain knowledge usually ends up as second-hand news in either functional design documents or as user stories in some scrum tools like Jira. Second-hand knowledge is a significant risk when building software. Each time information is transferred just like doing the telephone game, the story is changed, and people make assumptions. Because as Alberto Brandolini said: ‘It is not the domain expert’s knowledge that goes into production; it is the developer’s assumption of that knowledge that goes into production’.
+      Sharing knowledge is way more effective if we actively collaborate to gain new insights about the problem at hand. There are a lot of tools available to achieve it, but they have a steep learning curve, resulting in most disciplines having their own tool to model in. To solve it, we need visual collaborative modelling to learn between multiple disciplines. EventStorming is a technique that can facilitate visual collaborative modelling between the different disciplines. It is easily learned and empowers continuous knowledge sharing without the need to know a tool.
+      In this workshop, you will learn the essentials of EventStorming and how it can help you gain the necessary insights you need to deliver design quality software. With our newly acquired domain knowledge, we can start modelling multiple models for the same problem with Domain-Driven Design patterns. This way of visualising gives us the power to quickly iterate over the different models and figure out which will be the best to use. You will end up with the confidence to start your coding journey TDD style!
+      "
+    renditions:
+      - conference: "Software Design & development 2021"
+        url: "https://events.agileonthebeach.com/event/15740756-f9c3-4fcc-8348-ba191b63bb53/websitePage:645d57e4-75eb-4769-b2c0-f201a0bfc6ce"
+        date: "2021-11-19"
+        type: "workshop"
+  - name: "Designing bounded contexts for microservices using visual collaboration"
+    img: ../images/sessions/designing-microservices-viscoll.png
+    description:
+      "
+      There is an industry trend where businesses are moving towards autonomous product teams. These teams aim to be end-to-end responsible for the product they are building and maintaining. With the help of Continuous Delivery, teams have faster feedback cycles in which they can probe if a certain feature works. To achieve end-to-end team autonomy, companies move towards a microservices architecture to successfully inspect and adapt. To be effective with a microservices architecture, we require Conway's alignment, engineering teams aligned to business models/products; to achieve Conway’s alignment it’s required to design and model the domain. Domain-Driven Design’s bounded context is the essential pattern that helps to create Conway’s alignment.
+      Join us in this hands-on session where we show you how visual collaboration is the most effective way in co-creating sustainable Conway’s alignment. We will distil bounded contexts with visual collaboration tools Big Picture EventStorming, Context Mapping and the Bounded Context Canvas.
+      With visual collaboration:
+      - We create a shared understanding of the business flow, uncovering inconsistencies and competing goals
+      - Using the Theory of Constraints, we can discover, highlight and create a shared vision and strategy to focus our effort
+      - A critical part of doing visual collaboration is effective facilitation, especially facilitating workshops with +30 people at the same time
+      You leave our session understanding that to be effective with microservices, you need to start discover and design bounded contexts. You will learn heuristics that guide you in using visual tools in specific situations, and how to move on towards microservices.
+      "
+    renditions:
+      - conference: "OOP 2021"
+        url: "https://www.oop-konferenz.de/oop2021/programm/konferenzprogramm.html"
+        date: "2021-02-12"
+        type: "workshop"
+        miro: "https://miro.com/app/board/o9J_lWJdRtQ=/"

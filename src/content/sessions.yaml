@@ -46,10 +46,37 @@ sessions:
        Join us in this talk where we will interactively explore how we can improve our facilitation skills and focus on neuro-inclusiveness with Lewis Deep Democracy (LDD). By having a Deep Democratic discussions together on what biases are at play during liberating structures workshops, and how ranking will effect a visual collaborative modelling session like EventStorming and User Story Mapping, you will gain first-hand experience about LDD. With this experience, we will explain how we embedded LDD in our design processes. We will let you leave with the knowledge on how to observe sabotage behaviour, battle oppression, and to create safety in exploring alternative perceptions. We will show you how you can really let the group say what needs to be said and take a collective autocratic decision in designing your software models.
        "
     renditions:
+      - conference: "DevOps oNLine 2021"
+        url: "https://devopsdays.org/events/2021-amsterdam/program/kenny-baas"
+        date: "2021-10-29"
+        video:
+        speakerdeck: "https://speakerdeck.com/baasie/how-cognitive-biases-and-ranking-can-foster-an-ineffective-devops-culture-at-devopsdays-online"
+        alternativeTitle: "How cognitive biases and ranking can foster an ineffective DevOps culture"
+        alternativeDescription:
+          "
+          The effectiveness of working in a DevOps way and be able to progressively deliver software and gain insights comes from having a diverse group of people who, together, have a lot of wisdom and knowledge. You would expect that all this knowledge and all the feedback from progressively delivery software will be put to use co-creating and to design a model. In reality, we don’t actually listen to all the available input and perspectives due to cognitive biases and ranking. Because not everything that needs to be said has been said, we will end up with building sub-optimal software. Even worse, people don’t feel part of the solution and don’t commit to it. Good software needs all the insights and perception. If you are not aware, cognitive biases and ranking kills those insights and wisdom and kills the effectiveness of your DevOps culture!
+          Join us in this talk where we will explore how we can improve our facilitation skills and focus on neuro-inclusiveness. We will dive into techniques and methods from Liberating Structures and Deep Democracy the Lewis Method. We will demonstrate how you can combine these inclusive techniques with well known collaborative modelling tools like EventStorming, Example Mapping, Impact Mapping, and User Story Mapping. We will let you leave with the knowledge on how to observe sabotage behaviour, battle oppression, and to create safety in exploring alternative perceptions. We will show you how you can really let the group say what needs to be said and take a collective autocratic decision in creating software.
+          "
       - conference: "Mucon 2021"
         url: "https://skillsmatter.com/skillscasts/15026-how-cognitive-biases-and-ranking-can-foster-an-ineffective-architecture"
-        date: "2021-04-13"
+        date: "2021-11-13"
         video: "https://www.youtube.com/embed/7ty0nwXNh-M"
         speakerdeck: "https://speakerdeck.com/baasie/how-cognitive-biases-and-ranking-can-foster-an-ineffective-architecture-at-mucon-2021"
+        alternativeTitle:
+        alternativeDescription:
+  - name: "EventStorming; Continuous learning between multiple disciplines"
+    img: ../images/sessions/aotb-2021.png
+    description:
+      "
+      The way agile software teams gain knowledge about what to build is either by the product owner or business analyst serving as a proxy to domain knowledge. Domain knowledge usually ends up as second-hand news in either functional design documents or as user stories in some scrum tools like Jira. Second-hand knowledge is a problem because ‘It is not the domain expert’s knowledge that goes into production; it is the developer’s assumption of that knowledge that goes into production’. Because by sharing knowledge by doing the ‘telephone game’, where each time knowledge is transferred, assumptions create lies within those requirements.
+      Sharing knowledge is way more effective if we actively collaborate to gain new insights about the problem at hand. There are a lot of tools available to achieve it, but they have a steep learning curve, resulting in most disciplines having their own tool to model in. To solve it, we need visual collaborative modelling to learn between multiple disciplines. EventStorming is a technique that can facilitate visual collaborative modelling between the different disciplines. It is easily learned and empowers continuous knowledge sharing without the need to know a tool.
+      In this session, we will show you how easy it is to learn EventStorming and at the same time gain a lot of new insights about a new domain. EventStorming gives you the power to create a shared mindset and merge on your models without needing tools. You will experience how EventStorming can reduce requirements engineering from days to hours, increasing feedback, and ending up delivering the expected features.
+      "
+    renditions:
+      - conference: "Agile on the beach 2021"
+        url: "https://events.agileonthebeach.com/event/15740756-f9c3-4fcc-8348-ba191b63bb53/websitePage:645d57e4-75eb-4769-b2c0-f201a0bfc6ce"
+        date: "2021-09-02"
+        video:
+        speakerdeck:
         alternativeTitle:
         alternativeDescription:

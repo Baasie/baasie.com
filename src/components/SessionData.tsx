@@ -27,13 +27,17 @@ export const SessionData = graphql`
 export type SessionContent = {
     name: string
     description: string
-    renditions: {
-        conference: string
-        speakerdeck: string
-        date: string
-        url: string
-        video: string
-    }
+    renditions: Array<Rendition>
     img: { childImageSharp: { gatsbyImageData: IGatsbyImageData } }
+}
+
+export type Rendition = {
+    conference: string
+    url: string
+    date: Date
+    video: string
+    speakerdeck: string
+    alternativeTitle: string
+    alternativeDescription: string
 }
 

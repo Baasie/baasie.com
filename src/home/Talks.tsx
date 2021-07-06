@@ -12,6 +12,7 @@ type SessionComponentContent = {
     image: IGatsbyImageData
     description: string
     conference: string
+    conferenceUrl: string
     type: string
 }
 
@@ -22,17 +23,27 @@ interface SessionProps {
 const Session = ( {session} : SessionProps) => {
     return  (
         <div tw="flex flex-col md:w-1/3 bg-primary shadow-2xl rounded-b-lg items-center pb-4">
-            <GatsbyImage
-                image={session.image}
-                alt={session.name}
-                tw="h-full w-full object-cover"
-            />
+            <div tw="h-36 md:h-28 lg:h-56 xl:h-60 2xl:h-80 w-full overflow-hidden">
+                <GatsbyImage
+                    image={session.image}
+                    alt={session.name}
+                    tw="object-cover"
+                />
+            </div>
             <div tw="text-gray-800 p-2 font-sans text-sm xl:text-base p-4">
-                    <div tw="prose-sm md:prose-md lg:prose-lg xl:prose-xl font-bold h-1/5">
-                        {session.name} @ {session.conference}
-                    </div>
-
-                <div tw="line-clamp-6 h-4/5">
+                <h1 tw="prose-sm md:prose-md lg:prose-lg xl:prose-xl font-bold h-20 md:h-24">
+                    {session.name}
+                </h1>
+                <a
+                    role="button"
+                    tw="italic text-xs text-white px-1 py-1 bg-indigo-500 hover:bg-indigo-400 rounded"
+                    href={session.conferenceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {session.type} @ {session.conference}
+                </a>
+                <div tw="line-clamp-6 px-1 py-1">
                     {session.description}
                 </div>
             </div>
@@ -67,6 +78,7 @@ const Talks = () => {
                     image: session.img.childImageSharp.gatsbyImageData,
                     description: rendition.alternativeDescription || session.description,
                     conference: rendition.conference,
+                    conferenceUrl: rendition.url,
                     type: rendition.type
                 };
                 sessionsMap.set(rendition.date, sessionComponentContent);
@@ -96,7 +108,7 @@ const Talks = () => {
                 <div tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 ">
                     <h1 tw="text-base text-white md:text-xl xl:text-3xl font-bold">—Talks and hands-on—</h1>
                 </div>
-                <div tw="flex flex-col md:flex-row lg:w-4/5 items-center justify-between md:m-4 lg:m-8 space-y-4 md:space-y-0 md:space-x-4 lg:space-x-24">
+                <div tw="flex flex-col md:flex-row 2xl:w-4/5 items-center justify-between m-2 xl:m-4 space-y-4 md:space-y-0 md:space-x-4 xl:space-x-6 2xl:space-x-24">
                     <Session session={upcomingSession}/>
                     <Session session={firstPastSession}/>
                     <Session session={secondPastSession}/>
